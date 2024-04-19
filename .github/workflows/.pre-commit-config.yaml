@@ -1,4 +1,0 @@
-- repo: https://github.com/igorshubovych/markdownlint-cli
-  rev: "0.39.0"
-  hooks:
-  - id: markdownlint
