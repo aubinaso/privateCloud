@@ -1,0 +1,13 @@
+{
+    "name": "vm-ubuntu",
+    "tag": ["vm", "ubuntu"],
+    "hostname": "vm-ubuntu",
+    "provider": "virtualbox",
+    "cpus": 2,
+    "memory": 2048,
+    "box": "ubuntu/xenial64",
+    "box_version": "20180831.0.0",
+    "box_url": "https://app.vagrantup.com/ubuntu/boxes/xenial64/versions/20180831.0.0/providers/virtualbox.box",
+    "private_network": "",
+    "id": "vm-ubuntu"
+}

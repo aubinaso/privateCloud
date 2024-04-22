@@ -1,6 +1,4 @@
 # Python library
-
-pip3 install fastapi
-pip3 install "uvicorn[standard]"
+pip3 install flask
 
 # Download Vagrant
