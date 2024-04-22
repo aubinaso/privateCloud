@@ -7,4 +7,3 @@ There are some requirements before using the app. In the file `requirements.txt`
 - install the python package
 
 ## How to run the server :
-`uvicorn main:app --reload`
