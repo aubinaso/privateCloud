@@ -4,3 +4,5 @@ endpoints.json
 verb.json
 OLD
 *_pycache_*
+*test*
+etcd
