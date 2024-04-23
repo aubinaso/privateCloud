@@ -1,20 +1,23 @@
 from config import *
-from APIS.VirtualMachine.main import virtualmachine_blueprint
+from APIS.VirtualMachine.main import *
 
-resourcesObjects = {
-    "virtualMachine": None,
-    "virtualNetwork": None,
-}
+#app = Flask(__name__)
 
-app = Flask(__name__)
+app = connexion.App(__name__, specification_dir='./swagger')
+app.add_api('swagger.yml')
 
-parent_dir = "./etcd/"
 for directory_name in resourcesObjects.keys():
     path = os.path.join(parent_dir, directory_name)
     if not os.path.exists(path):
         os.makedirs(path)
 
-app.register_blueprint(virtualmachine_blueprint)
+## Registering Blueprints
+#app.register_blueprint(virtualmachine_blueprint)
+
+## Create home file
+@app.route('/')
+def home():
+    return render_template('home.html')
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=5000, debug=True)
+    app.run(host=HOST, port=PORT, debug=DEBUG)
