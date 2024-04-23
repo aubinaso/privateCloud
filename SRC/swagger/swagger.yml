@@ -1,0 +1,77 @@
+openapi: 3.0.0
+info:
+  title: "RP Flask REST API"
+  description: "An API about people and notes"
+  version: "1.0.0"
+
+servers:
+  - url: "/v1"
+
+components:
+  schemas:
+    VirtualMachine:
+      type: "object"
+      required:
+        - "name"
+      properties:
+        name:
+          type: "string"
+        hostname:
+          type: "string"
+        provider:
+          type: "string"
+        cpus:
+          type: "integer"
+        memory:
+          type: "integer"
+        box:
+          type: "string"
+        box_version:
+          type: "string"
+        box_url:
+          type: "string"
+        private_network:
+          type: "string"
+        tag:
+          type: "array"
+
+paths:
+  /virtualmachine:
+    post:
+      operationId: "APIS.VirtualMachine.main.add_virtualmachine"
+      tags:
+        - "virtualmachine"
+      summary: "Create a new virtual machine"
+      requestBody:
+        description: "Virtual Machine to be created"
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VirtualMachine"
+      responses:
+        "200":
+          description: "Successfully list my Virtual Machine"
+    get:
+      operationId: "APIS.VirtualMachine.main.list_virtualmachine"
+      tags:
+        - "virtualmachine"
+      summary: "List all my Virtual Machine"
+      responses:
+        "200":
+          description: "Successfully list my Virtual Machine"
+  /virtualmachine/{name}:
+    get:
+      operationId: "APIS.VirtualMachine.main.get_virtualmachine"
+      tags:
+        - "virtualmachine"
+      summary: "Get a Virtual Machine"
+      parameters:
+        - name: "name"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "Successfully get a Virtual Machine"

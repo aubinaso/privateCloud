@@ -7,3 +7,7 @@ There are some requirements before using the app. In the file `requirements.txt`
 - install the python package
 
 ## How to run the server :
+```python
+python .\main.py
+```
+ Then go to : http://HOST:PORT/v1/ui
