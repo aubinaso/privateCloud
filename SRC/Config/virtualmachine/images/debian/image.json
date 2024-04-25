@@ -1,0 +1,8 @@
+{
+    "10": {
+        "image_location" : "http://ftp.fr.debian.org/debian/dists/Debian10.5/main/installer-amd64/"
+    },
+    "9": {
+        "image_location" : "http://ftp.fr.debian.org/debian/dists/Debian9.13/main/installer-amd64/"
+    }
+}

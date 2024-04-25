@@ -13,24 +13,18 @@ components:
       type: "object"
       required:
         - "name"
+        - "image"
+        - "network"
       properties:
         name:
-          type: "string"
-        hostname:
-          type: "string"
-        provider:
           type: "string"
         cpus:
           type: "integer"
         memory:
           type: "integer"
-        box:
+        image:
           type: "string"
-        box_version:
-          type: "string"
-        box_url:
-          type: "string"
-        private_network:
+        network:
           type: "string"
         tag:
           type: "array"
@@ -51,7 +45,7 @@ paths:
               $ref: "#/components/schemas/VirtualMachine"
       responses:
         "200":
-          description: "Successfully list my Virtual Machine"
+          description: "Successfully creation of Virtual Machine"
     get:
       operationId: "APIS.VirtualMachine.main.list_virtualmachine"
       tags:
