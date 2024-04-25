@@ -2,17 +2,12 @@ import sys
 sys.path.append("../../Config/etcd.py")
 from Config.etcd import *
 
-#virtualmachine_blueprint = Blueprint('virtualmachine_blueprint', __name__)
-
-#@virtualmachine_blueprint.route('/v1/virtualmachine', methods=['GET'])
 def list_virtualmachine():
     return list_service("virtualMachine")
 
-#@virtualmachine_blueprint.route('/v1/virtualmachine/<string:name>', methods=['GET'])
 def get_virtualmachine(name: str):
     return get_service("virtualMachine", name)
 
-#@virtualmachine_blueprint.route('/v1/virtualmachine', methods=['POST'])
 def add_virtualmachine():
     json_data = request.get_json()
     return add_service("virtualMachine", json_data["name"], get_virtualmachine_json(json_data))

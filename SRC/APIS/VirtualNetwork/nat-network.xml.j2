@@ -1,0 +1,15 @@
+<network>
+  <name>{{name}}</name>
+  <forward mode='{{mode}}'>
+    <nat ipv6='yes' />
+  </forward>
+  <bridge name='{{bridge_name}}' stp='on' delay='0'/>
+  <mac address='{{mac}}'/>
+  <ip address='{{first_address}}' netmask='{{mask}}'>
+    <dhcp>
+      <range start='{{first_address}}' end='{{last_address}}'/>
+    </dhcp>
+  </ip>
+  <dns enable='yes' />
+</network>
+
