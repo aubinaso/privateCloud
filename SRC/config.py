@@ -5,6 +5,7 @@ import connexion, random
 from ipaddress import ip_network
 from datetime import datetime
 from jinja2 import Template
+import shutil
 
 resourcesObjects = {
     "virtualMachine": None,

@@ -15,4 +15,11 @@ swagger-cli bundle swagger.yml --outfile openapi.yml --type yaml
 cd SRC
 python .\main.py
 ```
- Then go to : http://HOST:PORT/v1/ui
+
+In one line :
+```bash
+cd SRC
+cd swagger; swagger-cli bundle swagger.yml --outfile openapi.yml --type yaml; cd ..; python .\main.py
+```
+
+Then go to : http://HOST:PORT/v1/ui
