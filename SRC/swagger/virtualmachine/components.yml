@@ -8,8 +8,10 @@ properties:
     type: "string"
   cpus:
     type: "integer"
+    description: "default : 2"
   memory:
     type: "integer"
+    description: "default : 2048"
   image:
     type: "string"
   network:
