@@ -4,9 +4,7 @@ from APIS.VirtualMachine.main import *
 app = connexion.App(__name__, specification_dir='./swagger')
 
 swagger_file = os.path.join("./swagger")
-for element in os.listdir(swagger_file):
-    app.add_api(element)
-#app.add_api('swagger.yml')
+app.add_api('openapi.yml')
 
 for directory_name in resourcesObjects.keys():
     path = os.path.join(parent_dir, directory_name)

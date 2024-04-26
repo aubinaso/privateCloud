@@ -1,0 +1,23 @@
+post:
+  operationId: "APIS.VirtualMachine.main.add_virtualmachine"
+  tags:
+    - "virtualmachine"
+  summary: "Create a new virtual machine"
+  requestBody:
+    description: "Virtual Machine to be created"
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "components.yml"
+  responses:
+    "200":
+      description: "Successfully creation of Virtual Machine"
+get:
+  operationId: "APIS.VirtualMachine.main.list_virtualmachine"
+  tags:
+    - "virtualmachine"
+  summary: "List all my Virtual Machine"
+  responses:
+    "200":
+      description: "Successfully list my Virtual Machine"
