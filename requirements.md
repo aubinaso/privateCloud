@@ -8,7 +8,4 @@ pip3 install ipaddress
 # Intall npm : [Link](https://nodejs.org/en/download/)
 ```bash
 npm install -g swagger-cli
-
-cd SRC/swagger
-swagger-cli bundle swagger.yml --outfile openapi.yml --type yaml
 ```
