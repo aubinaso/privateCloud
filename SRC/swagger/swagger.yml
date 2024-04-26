@@ -11,6 +11,8 @@ components:
   schemas:
     VirtualMachine:
       $ref: "virtualmachine/components.yml"
+    VirtualNetwork:
+      $ref: "virtualnetwork/components.yml"
 
 paths:
   /virtualnetwork:

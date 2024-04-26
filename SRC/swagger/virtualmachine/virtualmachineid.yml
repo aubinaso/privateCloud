@@ -12,3 +12,17 @@ get:
   responses:
     "200":
       description: "Successfully get a Virtual Machine"
+delete:
+  operationId: "APIS.VirtualMachine.main.delete_virtualmachine"
+  tags:
+    - "virtualmachine"
+  summary: "Delete a Virtual Machine"
+  parameters:
+    - name: "name"
+      in: "path"
+      required: true
+      schema:
+        type: "string"
+  responses:
+    "200":
+      description: "Successfully delete a Virtual Machine"

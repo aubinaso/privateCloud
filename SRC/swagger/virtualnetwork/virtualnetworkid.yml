@@ -12,3 +12,17 @@ get:
   responses:
     "200":
       description: "Successfully get a Virtual Network"
+delete:
+  operationId: "APIS.VirtualNetwork.main.delete_virtualnetwork"
+  tags:
+    - "virtualnetwork"
+  summary: "Delete a Virtual Network"
+  parameters:
+    - name: "name"
+      in: "path"
+      required: true
+      schema:
+        type: "string"
+  responses:
+    "200":
+      description: "Successfully delete a Virtual Network"
