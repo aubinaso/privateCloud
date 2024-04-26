@@ -7,7 +7,7 @@ properties:
     type: "string"
   mode:
     type: "integer"
-    description: "nat, route, open, bridge, private, passthrough, hostdev, vepa, "
+    description: "nat (default), route, open, bridge, private, passthrough, hostdev, vepa"
   network:
     type: "string"
   tag:
