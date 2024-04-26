@@ -1,0 +1,18 @@
+type: "object"
+required:
+  - "name"
+  - "image"
+  - "network"
+properties:
+  name:
+    type: "string"
+  cpus:
+    type: "integer"
+  memory:
+    type: "integer"
+  image:
+    type: "string"
+  network:
+    type: "string"
+  tag:
+    type: "array"

@@ -1,0 +1,14 @@
+get:
+  operationId: "APIS.VirtualNetwork.main.get_virtualnetwork"
+  tags:
+    - "virtualnetwork"
+  summary: "Get a Virtual Network"
+  parameters:
+    - name: "name"
+      in: "path"
+      required: true
+      schema:
+        type: "string"
+  responses:
+    "200":
+      description: "Successfully get a Virtual Network"

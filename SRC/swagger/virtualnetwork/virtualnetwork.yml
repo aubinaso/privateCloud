@@ -1,0 +1,23 @@
+post:
+  operationId: "APIS.VirtualNetwork.main.add_virtualnetwork"
+  tags:
+    - "virtualnetwork"
+  summary: "Create a new virtual network"
+  requestBody:
+    description: "Virtual Network to be created"
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "components.yml"
+  responses:
+    "200":
+      description: "Successfully creation of Virtual Network"
+get:
+  operationId: "APIS.VirtualNetwork.main.list_virtualnetwork"
+  tags:
+    - "virtualnetwork"
+  summary: "List all my Virtual Network"
+  responses:
+    "200":
+      description: "Successfully list my Virtual Network"

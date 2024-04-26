@@ -1,0 +1,14 @@
+get:
+  operationId: "APIS.VirtualMachine.main.get_virtualmachine"
+  tags:
+    - "virtualmachine"
+  summary: "Get a Virtual Machine"
+  parameters:
+    - name: "name"
+      in: "path"
+      required: true
+      schema:
+        type: "string"
+  responses:
+    "200":
+      description: "Successfully get a Virtual Machine"

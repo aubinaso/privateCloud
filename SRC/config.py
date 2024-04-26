@@ -15,7 +15,6 @@ def get_timestamp():
     return datetime.now().strftime(("%Y-%m-%d %H:%M:%S"))
 
 parent_dir = "./etcd/"
-VAGRANT_BIN = "C:\Program Files (x86)\Vagrant\\bin"
 
 HOST = "localhost"
 PORT = "5000"

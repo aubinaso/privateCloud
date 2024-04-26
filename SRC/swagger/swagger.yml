@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: "RP Flask REST API"
+  description: "An API about Private Cloud"
+  version: "1.0.0"
+
+servers:
+  - url: "/v1"
+
+components:
+  schemas:
+    VirtualMachine:
+      $ref: "virtualmachine/components.yml"
+
+paths:
+  /virtualnetwork:
+    $ref: "virtualnetwork/virtualnetwork.yml"
+  /virtualnetwork/{name}:
+    $ref: "virtualnetwork/virtualnetworkid.yml"
+  /virtualmachine:
+    $ref: "virtualmachine/virtualmachine.yml"
+  /virtualmachine/{name}:
+    $ref: "virtualmachine/virtualmachineid.yml"
